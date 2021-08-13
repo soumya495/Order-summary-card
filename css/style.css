@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --darkBlue: hsl(223, 47%, 23%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --desatBlue: hsl(224, 23%, 55%);
+  --paleBlue: hsl(225, 100%, 94%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--paleBlue);
+  height: 100vh;
+}
+
+.main-content {
+  height: 96vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 300px;
+  height: 80%;
+  border-radius: 1rem;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 16px 25px -14px #1f2f56;
+  -webkit-box-shadow: 0px 16px 25px -14px #1f2f56;
+  -moz-box-shadow: 0px 16px 25px -14px #1f2f56;
+}
+
+.header-image {
+  width: 100%;
+  height: 33%;
+  background-image: url(../images/illustration-hero.svg);
+  background-position: top;
+  background-size: cover;
+}
+
+.text-area {
+  width: 80%;
+  height: 30%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.text-area h1 {
+  font-size: 1.75rem;
+  color: var(--darkBlue);
+}
+
+.text-area p {
+  font-size: 1rem;
+  color: var(--desatBlue);
+  line-height: 1.4;
+}
+
+.plan-area {
+  width: 80%;
+  height: 10%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  background-color: var(--veryPaleBlue);
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan-area .plan {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan-area .plan .plan-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.plan-area .plan .plan-info .plan-name {
+  font-weight: 700;
+  color: var(--darkBlue);
+  font-size: 0.90rem;
+}
+
+.plan-area .plan .plan-info .plan-cost {
+  font-size: 0.85rem;
+  color: var(--desatBlue);
+}
+
+.plan-area a {
+  font-weight: 700;
+  font-size: 0.80rem;
+  color: var(--brightBlue);
+  width: 40%;
+  text-align: end;
+}
+
+.plan-area a:hover {
+  text-decoration: none;
+  color: #7468f3;
+}
+
+.cta-section {
+  width: 80%;
+  margin: 2rem auto;
+  height: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cta-section .p-cta {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background-color: var(--brightBlue);
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  box-shadow: 0px 16px 25px -14px #1f2f56;
+  -webkit-box-shadow: 0px 16px 25px -14px #1f2f56;
+  -moz-box-shadow: 0px 16px 25px -14px #1f2f56;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.cta-section .p-cta:hover {
+  background-color: #7468f3;
+  -webkit-transform: translateY(-1.5px);
+          transform: translateY(-1.5px);
+}
+
+.cta-section .s-cta {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--desatBlue);
+  font-size: 1.05rem;
+}
+
+.cta-section .s-cta:hover {
+  color: #4c5570;
+}
+
+.attribution {
+  height: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 99rem;
+  }
+  .container {
+    width: 400px;
+    height: 85%;
+  }
+  .text-area {
+    padding: 1.5rem 0;
+    height: 30%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .text-area p {
+    font-size: 0.90rem;
+    line-height: 1.6;
+  }
+  .plan-area {
+    padding: 1.5rem 0.5rem;
+  }
+  .plan-area .plan {
+    width: 45%;
+  }
+  .plan-area a {
+    width: 55%;
+  }
+  .cta-section {
+    margin: 1.5rem auto;
+    padding: 1rem 0;
+    height: 20%;
+  }
+  .cta-section .p-cta {
+    font-size: 0.90rem;
+  }
+  .cta-section .s-cta {
+    font-size: 0.95rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
